@@ -97,3 +97,6 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
+.shadow {
+  box-shadow: var(--box-shadow);
+}
