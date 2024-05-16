@@ -14,13 +14,11 @@ h3 {
   text-align: center;
   margin: 0;
 }
-
 h1 {
-  font-size: 96px;
+  font-size: 60px;
 }
-
 h2 {
-  font-size: 48px;
+  font-size: 28;
 }
 
 h3 {
@@ -80,7 +78,7 @@ p {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -98,4 +96,44 @@ p {
 }
 .shadow {
   box-shadow: var(--box-shadow);
+}
+.heading-margin {
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .hide-image {
+    display: none;
+  }
+}
+@media (max-width: 222px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .email-link {
+    font-size: 10px;
+  }
+  .fit-sm-scr {
+    font-size: 10px;
+  }
+  .navigation-links a {
+    margin: 5px;
+  }
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
 }
