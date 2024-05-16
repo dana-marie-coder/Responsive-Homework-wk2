@@ -1,6 +1,5 @@
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -10,7 +9,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   text-align: center;
   margin: 0;
 }
@@ -27,11 +27,9 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
-  border-radius: 4px;
+  background: none;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -57,21 +55,7 @@ p {
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .email-link {
@@ -100,12 +84,6 @@ p {
 .heading-margin {
   margin-top: 30px;
 }
-
-@media (max-width: 576px) {
-  .hide-image {
-    display: none;
-  }
-}
 @media (max-width: 222px) {
   h1 {
     font-size: 30px;
@@ -124,6 +102,11 @@ p {
   }
   .navigation-links a {
     margin: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .hide-image {
+    display: none;
   }
 }
 @media (min-width: 576px) {
